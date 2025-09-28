@@ -1,0 +1,16 @@
+{
+  "trail-garden": {
+    "title": "TRAIL Modular Garden",
+    "description": "A modular gardening system inspired by chinampas and natural fractals.",
+    "date": "2024-11-01",
+    "images": ["/images/trail1.png"],
+    "tags": ["product design", "sustainability"]
+  },
+  "smart-mold": {
+    "title": "Smart Liquid Mold",
+    "description": "A programmable mold using electrorheological fluid for embossing and debossing.",
+    "date": "2024-12-01",
+    "images": ["/images/smartmold1.png"],
+    "tags": ["engineering", "materials"]
+  }
+}
