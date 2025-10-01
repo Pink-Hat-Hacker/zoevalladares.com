@@ -1,23 +1,44 @@
 {
   "trail-garden": {
     "title": "TRAIL - Modular Garden",
-    "description": "A modular gardening system inspired by chinampas and natural fractals.",
-    "date": "2024-10-16",
-    "images": ["/images/trail-img/trail1.png"],
-    "tags": ["product design", "sustainability"]
+    "details": {
+      "featured": false,
+      "description": "TRAIL is a modular system –– inspired by the Aztec Chinampas –– for growing plants indoors, based on one simple shape that can be combined, scaled and is designed for ease of watering. The continuous nature of the structure can act as a space separator –– a living sculpture that moderates and dictates room flow, similar to the dry zen gardens of Japan.",
+      "date": "2024-10-16",
+      "thumbnail": "/images/trail-img/trail1.png",
+      "tags": ["product design", "sustainability"]
+    },
+    "blurbs": []
   },
   "smart-mold": {
     "title": "GHOST - Digitally Reconfigurable Mold",
-    "description": "GHOST is a proof of concept, aiming to digitally control “smart fluidˮ to create instant reconfigurable molds from 3D mesh files for hobbyist manufacturing, capable of evolving into an industrial manufacturing process.",
-    "date": "2024-11-26",
-    "images": ["/images/ghost-drm/ghost1.png"],
-    "tags": ["engineering", "material science"]
+    "details": {
+      "featured": false,
+      "update": {
+        "update_date": "2025-10-1",
+        "update_description": "talking to prof about independent study"
+      },
+      "description": "GHOST is a proof of concept, aiming to digitally control “smart fluidˮ to create instant reconfigurable molds from 3D mesh files for hobbyist manufacturing, capable of evolving into an industrial manufacturing process.",
+      "date": "2024-11-26",
+      "thumbnail": "/images/ghost-drm/ghost1.png",
+      "tags": ["engineering", "material science"]
+    },
+    "blurbs": [
+      {
+        "text": "The current standard for reconfigurable molds is the Pin Mold, where each pin requires an actuator, limiting it’s resolution. Liquid removes the resolution limitation, and electrorheological fluid (“smart fluid”) can be precisely controlled using voltage from electrodes.",
+        "images": ["/images/ghost-drm/ghost1.png"]
+      }
+    ]
   },
   "duo-msd": {
     "title": "DUO - Modular Stationery Device",
-    "description": "DUO is a modular stationery system for makers & creatives. The structure is inspired by Japanese wood joinery which enables the connection of different tools depending on a users needs. It is an adaptable, versatile and evolving system.",
-    "date": "2024-10-28",
-    "images": ["/images/duo-msd/duo1.png"],
-    "tags": ["product design", "manufacturing", "engineering"]
+    "details":{
+      "featured": false,
+      "description": "DUO is a modular stationery system for makers & creatives. The structure is inspired by Japanese wood joinery which enables the connection of different tools depending on a users needs. It is an adaptable, versatile and evolving system.",
+      "date": "2024-10-28",
+      "thumbnail": "/images/duo-msd/duo1.png",
+      "tags": ["product design", "manufacturing", "engineering"]
+    },
+    "blurbs": []
   }
 }
