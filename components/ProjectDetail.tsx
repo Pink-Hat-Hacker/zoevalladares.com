@@ -1,20 +1,6 @@
-// homepage:
-// - top left Name
-// - email(s) underneath
-// icons for git, linkedin, insta, spotify
-
-// - about me
-// ---> maybe an img
-// - featured initiatives (2)
-// ---> use projectcard and a grid to show two
-// -------> these should technically be projects on the portfolio page just considered "featured"
-// - show relevant coursework
-
-// portfolio:
-// - reverse chronological list
-
-
-import { Project } from "../data/project";
+import { Project } from "@/data/project";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 type Props = {
   project: Project;
@@ -24,6 +10,11 @@ export default function ProjectDetail({ project }: Props) {
   return (
     <article className="max-w-3xl mx-auto">
       {/* Title + Date */}
+      {project.details.link ? (
+        <a href={project.details.link}>
+          <FontAwesomeIcon icon={faGithub} style={{ color: "#f514b6" }} />
+        </a>
+      ) : null}
       <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
       {project.details.date && (
         <p className="text-gray-500 mb-2">
@@ -35,23 +26,36 @@ export default function ProjectDetail({ project }: Props) {
       {project.details.update && project.details.update.update_description && (
         <div className="mb-6 p-4 border-l-4 border-blue-500 bg-blue-50">
           <p className="text-sm text-blue-800 font-medium">
-            Update ({new Date(project.details.update.update_date).toLocaleDateString()}):
+            Update (
+            {new Date(project.details.update.update_date).toLocaleDateString()}
+            ):
           </p>
-          <p className="text-blue-900">{project.details.update.update_description}</p>
+          <p className="text-blue-900">
+            {project.details.update.update_description}
+          </p>
         </div>
       )}
 
       {/* Main description */}
       <p className="mb-6 text-lg">{project.details.description}</p>
 
+      {/* If Video */}
+      {project.details.video ? (
+        <iframe
+          width="560"
+          height="315"
+          src={project.details.video}
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
+          className="mb-8"
+        ></iframe>
+      ) : null}
+
       {/* Blurbs */}
       {project.blurbs.map((blurb, idx) => (
         <section key={idx} className="mb-8">
-          {blurb.text && (
-            <p className="mb-4 text-lg leading-relaxed">{blurb.text}</p>
-          )}
           {blurb.images && blurb.images.length > 0 && (
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-2">
               {blurb.images.map((src, i) => (
                 <img
                   key={i}
@@ -62,6 +66,11 @@ export default function ProjectDetail({ project }: Props) {
               ))}
             </div>
           )}
+          {blurb.text &&
+            blurb.text.length > 0 &&
+            blurb.text.map((t) => (
+              <p className="mb-4 text-lg leading-relaxed">{t}</p>
+            ))}
         </section>
       ))}
 
@@ -81,4 +90,3 @@ export default function ProjectDetail({ project }: Props) {
     </article>
   );
 }
-

@@ -1,7 +1,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import projects from "../../data/projects.json";
-import ProjectDetail from "../../components/ProjectDetail";
-import { Project } from "../../data/project";
+import projects from "@/data/projects.json";
+import ProjectDetail from "@/components/ProjectDetail";
+import { Project } from "@/data/project";
 
 type Props = {
   project: Project;

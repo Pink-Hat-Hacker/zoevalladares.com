@@ -1,0 +1,28 @@
+{
+    "full_name": "Zoë Y. Valladares",
+    "first_name": "Zoë",
+    "last_name": "Valladares",
+    "alias": "Pink Hat Hacker",
+    "cover_photo": "",
+    "education": {
+        "masters": {
+            "university_name": "Duke University",
+            "department_name": "Pratt School of Engineering",
+            "program_name": "MEng Design & Technology Innovation",
+            "program_link": "https://masters.pratt.duke.edu/design-technology-innovation/",
+            "graduation_year": 2027,
+            "affiliations": [["Duke Motorsport"], []],
+            "coursework": ["",""]
+        },
+        "undergraduate": {
+            "university_name": "University of Delaware",
+            "department_name": "School of Engineering",
+            "program_name": "BA Computer Science",
+            "program_link": "https://www.cis.udel.edu/",
+            "graduation_year": 2024,
+            "affiliations": [[], []],
+            "coursework": ["",""]
+        }
+    },
+    "skills": ["random",""]
+}

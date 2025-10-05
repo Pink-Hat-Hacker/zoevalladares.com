@@ -9,10 +9,12 @@ export type Project = {
     description: string;
     date: string;
     thumbnail: string;
+    link?: string
     tags: string[];
+    video?: string;
   };
   blurbs: {
-    text: string;
+    text: string[];
     images: string[];
   }[];
 };
