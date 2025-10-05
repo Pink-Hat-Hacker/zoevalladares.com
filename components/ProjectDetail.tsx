@@ -1,21 +1,27 @@
 import { Project } from "@/data/project";
+import FullScreenImage from "./FullScreenImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useState } from "react";
 
 type Props = {
   project: Project;
 };
 
 export default function ProjectDetail({ project }: Props) {
+  const [fullscreenSrc, setFullscreenSrc] = useState<string | null>(null);
+
   return (
     <article className="max-w-3xl mx-auto">
       {/* Title + Date */}
-      {project.details.link ? (
-        <a href={project.details.link}>
-          <FontAwesomeIcon icon={faGithub} style={{ color: "#f514b6" }} />
-        </a>
-      ) : null}
-      <h1 className="text-4xl font-bold mb-4">{project.title}</h1>
+      <h1 className="text-4xl font-bold mb-4">
+        {project.details.link ? (
+          <a href={project.details.link}>
+            <FontAwesomeIcon icon={faGithub} style={{ color: "#f514b6" }} />
+          </a>
+        ) : null}{" "}
+        {project.title}
+      </h1>
       {project.details.date && (
         <p className="text-gray-500 mb-2">
           {new Date(project.details.date).toLocaleDateString()}
@@ -42,37 +48,45 @@ export default function ProjectDetail({ project }: Props) {
       {/* If Video */}
       {project.details.video ? (
         <iframe
-          width="560"
-          height="315"
           src={project.details.video}
-          title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-          className="mb-8"
+          className="mb-8 w-full h-100 rounded-lg"
         ></iframe>
       ) : null}
 
       {/* Blurbs */}
       {project.blurbs.map((blurb, idx) => (
-        <section key={idx} className="mb-8">
-          {blurb.images && blurb.images.length > 0 && (
-            <div className="grid md:grid-cols-2 gap-2">
-              {blurb.images.map((src, i) => (
-                <img
-                  key={i}
-                  src={src}
-                  alt={`${project.title} image ${i + 1}`}
-                  className="rounded-lg object-cover"
-                />
-              ))}
-            </div>
-          )}
+        <section key={idx} className="mb-8 border-b border-gray-400">
+          {/* Text */}
           {blurb.text &&
             blurb.text.length > 0 &&
             blurb.text.map((t) => (
               <p className="mb-4 text-lg leading-relaxed">{t}</p>
             ))}
+          {/* Images */}
+          {blurb.images && blurb.images.length > 0 && (
+            <div className="mb-4 grid md:grid-cols-2 gap-2">
+              {blurb.images.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt={`${project.title} image ${i + 1}`}
+                  className="w-full h-full rounded-lg object-cover"
+                  onClick={() => setFullscreenSrc(src)}
+                />
+              ))}
+            </div>
+          )}
         </section>
       ))}
+
+      {fullscreenSrc && (
+        <FullScreenImage
+          src={fullscreenSrc}
+          alt="Expanded image"
+          onClose={() => setFullscreenSrc(null)}
+        />
+      )}
 
       {/* Tags */}
       {project.details.tags && (

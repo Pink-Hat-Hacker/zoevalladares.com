@@ -1,28 +1,83 @@
 {
-    "full_name": "Zoë Y. Valladares",
-    "first_name": "Zoë",
-    "last_name": "Valladares",
-    "alias": "Pink Hat Hacker",
-    "cover_photo": "",
-    "education": {
-        "masters": {
-            "university_name": "Duke University",
-            "department_name": "Pratt School of Engineering",
-            "program_name": "MEng Design & Technology Innovation",
-            "program_link": "https://masters.pratt.duke.edu/design-technology-innovation/",
-            "graduation_year": 2027,
-            "affiliations": [["Duke Motorsport"], []],
-            "coursework": ["",""]
-        },
-        "undergraduate": {
-            "university_name": "University of Delaware",
-            "department_name": "School of Engineering",
-            "program_name": "BA Computer Science",
-            "program_link": "https://www.cis.udel.edu/",
-            "graduation_year": 2024,
-            "affiliations": [[], []],
-            "coursework": ["",""]
-        }
+  "full_name": "Zoë Y. Valladares",
+  "first_name": "Zoë",
+  "last_name": "Valladares",
+  "alias": "Pink Hat Hacker",
+  "cover_photo": "",
+  "education": {
+    "masters": {
+      "university_name": "Duke University",
+      "department_name": "Pratt School of Engineering",
+      "program_name": "MEng Design & Technology Innovation",
+      "program_link": "https://masters.pratt.duke.edu/design-technology-innovation/",
+      "graduation_year": 2027,
+      "affiliations": [["Duke Motorsport"], ["Duke NSBE Chapter"]],
+      "coursework": [
+        "Design Climate I",
+        "Design Innovation Studio 1",
+        "Design Technology Core 1",
+        "Ethical Design, Innovation & Social Practice"
+      ]
     },
-    "skills": ["random",""]
+    "undergraduate": {
+      "university_name": "University of Delaware",
+      "department_name": "School of Engineering",
+      "program_name": "BA Computer Science",
+      "program_link": "https://www.cis.udel.edu/",
+      "graduation_year": 2024,
+      "affiliations": [["Capture The Flag"], ["UD NSBE Chapter"]],
+      "coursework": [
+        "Programming [Java]",
+        "Systems Programming [C]",
+        "Data Structures & Algorithms",
+        "Machine Organization & Assembly Language [AR64]",
+        "Software Engineering [Typescript]",
+        "Game Development",
+        "3D Modeling [Blender]",
+        "Operating Systems",
+        "Web App Security [Javascript, Firebase]",
+        "Cloud Cryptography",
+        "Discrete Mathematics",
+        "Calculus A",
+        "Analytical Geometry"
+      ]
+    }
+  },
+  "skills": [
+    "Python",
+    "Javascript",
+    "Typescript",
+    "C++",
+    "C#",
+    "C",
+    "Processing",
+    "npm",
+    "Git",
+    "Node.js",
+    "React",
+    "SQL",
+    "MongoDB",
+    "Firebase",
+    "Agile Methodologies",
+    "SCRUM",
+    "Computer Aided Design (CAD)",
+    "CAD/CAM",
+    "Computer Numerical Control (CNC)",
+    "Plasma Cutting",
+    "G-Code",
+    "Mach3",
+    "Automation",
+    "Power BI",
+    "Photography",
+    "p5.js",
+    "Quickbase",
+    "Robomotion",
+    "Zapier",
+    "Process Engineering",
+    "Solutions Engineering",
+    "Workflow Management",
+    "Robotic Process Automation (RPA)",
+    "Jinja",
+    "PandaDocs"
+  ]
 }

@@ -41,7 +41,7 @@ export default function Header() {
             <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} style={{ color: "#f514b6" }} />
           </button>
 
-          <div className="hidden md:flex gap-6 text-3xl">
+          <div className="hidden md:flex gap-8 text-3xl">
             {socialLinks.map(({ href, icon }, i) => (
               <a
                 key={i}
