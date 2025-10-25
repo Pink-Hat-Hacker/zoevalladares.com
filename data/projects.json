@@ -285,5 +285,35 @@
         "images": ["/images/microbots/microbots2.png"]
       }
     ]
+  },
+  "crime-ai": {
+    "title": "UD Crime AI - HenHacks 2024",
+    "details": {
+      "featured": false,
+      "description": "Generative Machine Learning model trained on UD Police Daily Statistics from 2017-2021. When provided a LOCATION, DATE, & TIME it generates a prediction of what crime description may be committed.",
+      "date": "2024-3-2",
+      "thumbnail": "/images/ud-crime-ai/ud-crime-ai1.jpg",
+      "link": "https://github.com/Pink-Hat-Hacker/henhacks-ud-crime-ai",
+      "tags": ["software engineering", "machine learning", "python", "sklearn", "jupyter notebook", "udel"]
+    },
+    "blurbs": [
+      {
+        "text": [
+          "HOW",
+          "- Web Scraping Data: First, the data needed to be gathered by the UD Police Statistics website. It was not easily available to download and was separated by day. A simple Python script got all the data into a CSV file.",
+          "- Cleaning Data: Although the data seemed usable it required some standardizing for an ML model.",
+          "   1 - > The entries contained human error and typos so there was a lot of duplicate data with incorrect spelling or formatting. For example: Trabant Student Center & Trabant Building",
+          "   2 - > The dates needed to be separated into DAY, MONTH, YEAR",
+          "   3 - > The times needed to be standardized to military time and : removed",
+          "- Training the Model: Although the data seemed usable it required some standardizing for an ML model.",
+          "   1 - > Using sklearn the model was trained on a DecisionTreeClassifier()",
+          "   2 - > The data was split into training and testing groups. The test size was 20% of the data.",
+          "   3 - > All the data was encoded so that they were numerical values because ML models are essentially mathematical models.",
+          "   4 - > The range of accuracy (since March 2024) is 20% - 30%"
+        ],
+        "images": [
+        ]
+      }
+    ]
   }
 }

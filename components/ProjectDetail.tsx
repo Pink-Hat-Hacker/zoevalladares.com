@@ -12,7 +12,7 @@ export default function ProjectDetail({ project }: Props) {
   const [fullscreenSrc, setFullscreenSrc] = useState<string | null>(null);
 
   return (
-    <article className="max-w-3xl mx-auto">
+    <article className="max-w-5xl mx-auto">
       {/* Title + Date */}
       <h1 className="text-4xl font-bold mb-4">
         {project.details.link ? (

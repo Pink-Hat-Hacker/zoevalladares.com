@@ -11,7 +11,7 @@ export default function Home() {
   const [showCoursework, setShowCoursework] = useState(true);
 
   return (
-    <div className="p-8">
+    <div className="p-8 max-w-6xl mx-auto">
       {/* About Me Section */}
       <div className="mb-8">
         <div
@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         {showAbout && (
-          <div className="text-xl mt-4 transition-all duration-300">
+          <div className="text-xl mt-4 transition-all duration-300 max-w-5xl mx-auto">
             <p>hi, i'm {aboutme.first_name}!</p>
             <p>
               - student @ {aboutme.education.masters.university_name} studying{" "}
@@ -40,20 +40,6 @@ export default function Home() {
               {aboutme.education.undergraduate.graduation_year}
             </p>
             <p>a Blue Devil-Hen</p>
-
-            {aboutme.skills && (
-              <div className="flex gap-2 flex-wrap mt-6">
-                <h3 className="text-lg">Skills: </h3>
-                {aboutme.skills.map((skill: string, i: number) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 bg-gray-200 rounded-full text-sm"
-                  >
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            )}
           </div>
         )}
       </div>
@@ -84,7 +70,7 @@ export default function Home() {
           className="flex items-center justify-between cursor-pointer border-b border-gray-200 pb-2"
           onClick={() => setShowCoursework(!showCoursework)}
         >
-          <h1 className="text-3xl">Related Coursework</h1>
+          <h1 className="text-3xl">Related Coursework & Skills</h1>
           <FontAwesomeIcon
             icon={showCoursework ? faChevronUp : faChevronDown}
             className="text-3xl transition-transform duration-200"
@@ -93,10 +79,10 @@ export default function Home() {
         </div>
 
         {showCoursework && (
-          <div className="mt-4 transition-all duration-300">
+          <div className="mt-4 transition-all duration-300 max-w-5xl mx-auto">
             {aboutme.education.masters.coursework && (
               <div className="flex gap-2 flex-wrap mt-6">
-                <h3 className="text-xl">
+                <h3 className="text-xl font-bold">
                   {aboutme.education.masters.university_name}:
                 </h3>
                 {aboutme.education.masters.coursework.map(
@@ -113,7 +99,7 @@ export default function Home() {
             )}
             {aboutme.education.undergraduate.coursework && (
               <div className="flex gap-2 flex-wrap mt-6">
-                <h3 className="text-xl">
+                <h3 className="text-xl font-bold">
                   {aboutme.education.undergraduate.university_name}:
                 </h3>
                 {aboutme.education.undergraduate.coursework.map(
@@ -126,6 +112,19 @@ export default function Home() {
                     </span>
                   )
                 )}
+              </div>
+            )}
+            {aboutme.skills && (
+              <div className="flex gap-2 flex-wrap mt-6">
+                <h3 className="text-xl font-bold">Skills: </h3>
+                {aboutme.skills.map((skill: string, i: number) => (
+                  <span
+                    key={i}
+                    className="px-3 py-1 bg-gray-200 rounded-full text-sm"
+                  >
+                    {skill}
+                  </span>
+                ))}
               </div>
             )}
           </div>
