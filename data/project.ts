@@ -14,6 +14,7 @@ export type Project = {
     video?: string;
   };
   blurbs: {
+    section_header: string;
     text: string[];
     images: string[];
   }[];

@@ -7,20 +7,29 @@
       "date": "2024-10-16",
       "thumbnail": "/images/trail-img/trail1.png",
       "link": "",
-      "tags": ["product design", "sustainability"],
+      "tags": [
+        "product design",
+        "sustainability"
+      ],
       "video": "https://www.youtube.com/embed/qz3lqa8fNNA?si=IO3NoboJI3A3hQRE"
     },
     "blurbs": [
       {
-        "text": ["RESEARCH SCOPE & PROBLEM", 
-        "U.S. needs 4.3M more apartments by 2035 to address housing demand",
-        "Hydrogels reduce water waste & promote plant growth",
-        "55% garden for aesthetics, 43% for food in the U.S."
-      ],
-        "images": ["/images/trail-img/trail1.png"]
+        "section_header": "RESEARCH SCOPE & PROBLEM",
+        "text": [
+          "U.S. needs 4.3M more apartments by 2035 to address housing demand",
+          "Hydrogels reduce water waste & promote plant growth",
+          "55% garden for aesthetics, 43% for food in the U.S."
+        ],
+        "images": [
+          "/images/trail-img/trail1.png"
+        ]
       },
       {
-        "text": ["SKETCHES"],
+        "section_header": "SKETCHES",
+        "text": [
+          "preliminary sketches on form and modularity ideas."
+        ],
         "images": [
           "/images/trail-img/trail4.png",
           "/images/trail-img/trail5.png",
@@ -29,7 +38,10 @@
         ]
       },
       {
-        "text": ["SKEMATICS"],
+        "section_header": "SKEMATICS",
+        "text": [
+          "After selecting a form, using Autodesk Fusion360, I developed CAD for TRAIL."
+        ],
         "images": [
           "/images/trail-img/trail2.png",
           "/images/trail-img/trail3.png",
@@ -38,7 +50,10 @@
         ]
       },
       {
-        "text": ["STAGING"],
+        "section_header": "STAGING",
+        "text": [
+          "Using Blender, I staged the forms as if they were used in a home. Scroll to the top to see the full animation on YouTube."
+        ],
         "images": [
           "/images/trail-img/trail1.png",
           "/images/trail-img/trail14.png",
@@ -60,17 +75,26 @@
       "date": "2024-11-26",
       "thumbnail": "/images/ghost-drm/ghost1.png",
       "link": "https://github.com/Pink-Hat-Hacker/ghost-ui",
-      "tags": ["engineering", "material science"]
+      "tags": [
+        "engineering",
+        "material science"
+      ]
     },
     "blurbs": [
       {
+        "section_header": "PROBLEM",
         "text": [
-          "PROBLEM: The current standard for reconfigurable molds is the Pin Mold, where each pin requires an actuator, limiting it’s resolution. Liquid removes the resolution limitation, and electrorheological fluid (“smart fluid”) can be precisely controlled using voltage from electrodes."
+          "The current standard for reconfigurable molds is the Pin Mold, where each pin requires an actuator, limiting it’s resolution. Liquid removes the resolution limitation, and electrorheological fluid (“smart fluid”) can be precisely controlled using voltage from electrodes."
         ],
-        "images": ["/images/ghost-drm/ghost1.png"]
+        "images": [
+          "/images/ghost-drm/ghost1.png"
+        ]
       },
       {
-        "text": ["IDEATION"],
+        "section_header": "IDEATION",
+        "text": [
+          "After researching potential materials, sketching the basin and the initial idea of how GHOST would work helped pave next steps."
+        ],
         "images": [
           "/images/ghost-drm/ghost2.png",
           "/images/ghost-drm/ghost3.png",
@@ -78,8 +102,9 @@
         ]
       },
       {
-        "text": ["PHASE 1 - Research, Testing, Iterating",
-          "SCIENCE - Electrorheological Fluids (ER) made up of cornstarch and vegetable oil, are extremely fine non-conductive but electrically active particles. When introduced to an electric field, ER’s viscosity changes in response. The GHOST basin has a 2D matrix of electrodes (pennies).", 
+        "section_header": "PHASE 1 - Research, Testing, Iterating",
+        "text": [
+          "SCIENCE - Electrorheological Fluids (ER) made up of cornstarch and vegetable oil, are extremely fine non-conductive but electrically active particles. When introduced to an electric field, ER’s viscosity changes in response. The GHOST basin has a 2D matrix of electrodes (pennies).",
           "ELECTRONIC SCHEMATICS - In collaboration with Electrical Engineering Professor James Sherman @ AACC, I developed a voltage multiplier. ER requires high voltages which most DC power supplies do not provide. I was able to achieve 160 Volts through this multiplier and feed it to two electrodes.",
           "CHALLENGES & REWORK - 160 Volts was not sufficient. There was little to no change in the viscosity of the ER fluid. After discussing the limitations, the results of my findings indicated most power supplies do not provide the necessary voltage, except for static electricity."
         ],
@@ -89,8 +114,9 @@
         ]
       },
       {
-        "text": ["PHASE 2 - Rework, Software, Testing",
-          "STATIC ELECTRICITY - ER is often demonstrated with a charged balloon, which loses charge, and isn’t feasible for GHOST. Since ER only require high voltage (1-4kV/mm) and little to no current, researching how to use a Van de Graaff generator was the next step in this process.", 
+        "section_header": "PHASE 2 - Rework, Software, Testing",
+        "text": [
+          "STATIC ELECTRICITY - ER is often demonstrated with a charged balloon, which loses charge, and isn’t feasible for GHOST. Since ER only require high voltage (1-4kV/mm) and little to no current, researching how to use a Van de Graaff generator was the next step in this process.",
           "SLICING SOFTWARE [https://github.com/Pink-Hat-Hacker/ghost-ui] - In anticipation for a fully functional prototype, and the future use of a microcontroller, I wrote a slicer in Python. It slices an STL along the x and y axis, mimicking the 2D basin, and plots the max z-axis points on a 3D graph. Using a surface plotter, the slicer hints the finished product.",
           "TESTING & FUTURE ITERATIONS - To learn how a Van De Graaff generator worked, I created a version using household items. Phase 3 will involve an upgraded Van De Graaff generator to apply the current circuit schematic and test the basin 2D matrix."
         ],
@@ -108,15 +134,27 @@
       "description": "DUO is a modular stationery system for makers & creatives. The structure is inspired by Japanese wood joinery which enables the connection of different tools depending on a users needs. It is an adaptable, versatile and evolving system.",
       "date": "2024-10-28",
       "thumbnail": "/images/duo-msd/duo1.png",
-      "tags": ["product design", "manufacturing", "engineering"]
+      "tags": [
+        "product design",
+        "manufacturing",
+        "engineering"
+      ]
     },
     "blurbs": [
       {
-        "text": ["PROBLEM - Creatives often purchase multiple tools by different brands to achieve their goals. An average consumer may not place much stake in what type of tool they are purchasing. If there was one system that provided quality, affordability and ease of use for various tools this would remove the need for multiple consumable products and increase sustainability."],
-        "images": ["/images/duo-msd/duo1.png"]
+        "section_header": "PROBLEM",
+        "text": [
+          "Creatives often purchase multiple tools by different brands to achieve their goals. An average consumer may not place much stake in what type of tool they are purchasing. If there was one system that provided quality, affordability and ease of use for various tools this would remove the need for multiple consumable products and increase sustainability."
+        ],
+        "images": [
+          "/images/duo-msd/duo1.png"
+        ]
       },
       {
-        "text": ["experimenting with joinery in CAD (Fusion 360) & Sketches + Inspo"],
+        "section_header": "RESEARCH",
+        "text": [
+          "experimenting with joinery in CAD (Fusion 360) & Sketches + Inspo"
+        ],
         "images": [
           "/images/duo-msd/duo2.png",
           "/images/duo-msd/duo3.png",
@@ -128,9 +166,16 @@
         ]
       },
       {
+        "section_header": "IDEATION",
         "text": [
-          "IDEATION - Focusing on longevity and an individual’s connection to their tools, DUO aims to provide customizable, space-saving, sustainable tools/devices that adapt to users needs. Aim for an intuitive connection mechanism that is satisfying, functional, and aesthetic.",
-          "CHALLENGES - Size and innovative mechanisms to ensure a reduced learning curve for users while maintaining a streamline profile. Manufacturing processes that are cost efficient, quality and work with the design. Designing functional mechanisms that can work with a range of materials. Multiple prototypes not fitting properly because of differing manufacturing processes or design.",
+          "Focusing on longevity and an individual’s connection to their tools, DUO aims to provide customizable, space-saving, sustainable tools/devices that adapt to users needs. Aim for an intuitive connection mechanism that is satisfying, functional, and aesthetic."
+        ],
+        "images": []
+      },
+      {
+        "section_header": "CHALLENGES",
+        "text": [
+          "Size and innovative mechanisms to ensure a reduced learning curve for users while maintaining a streamline profile. Manufacturing processes that are cost efficient, quality and work with the design. Designing functional mechanisms that can work with a range of materials. Multiple prototypes not fitting properly because of differing manufacturing processes or design.",
           "Materials - PLA, RESIN, IRON infused PLA",
           "Manufacturing - 3D Printing (Makerbot & Formlabs)",
           "Designing - Fusion 360 & Blender"
@@ -140,12 +185,12 @@
         ]
       },
       {
+        "section_header": "MINIMUM VIABLE PRODUCT",
         "text": [
-          "MINIMUM VIABLE PRODUCT",
-          "3 different tools: 2mm graphite pencil, ballpoint pen, utility device",
-          "produced using 3D printed PLA plastic with ferromagnetic properties",
-          "0.05mm offset for smooth joining",
-          "triangular body shape to prevent rolling & encourage proper holding position"
+          "- 3 different tools: 2mm graphite pencil, ballpoint pen, utility device",
+          "- produced using 3D printed PLA plastic with ferromagnetic properties",
+          "- 0.05mm offset for smooth joining",
+          "- triangular body shape to prevent rolling & encourage proper holding position"
         ],
         "images": [
           "/images/duo-msd/duo11.png",
@@ -162,17 +207,25 @@
       "date": "2023-11-15",
       "thumbnail": "/images/allergen-ai/allergen1.png",
       "link": "https://github.com/Pink-Hat-Hacker/allergen-ai",
-      "tags": ["software engineering", "ux/ui", "javascript", "firebase", "logmeal", "api"],
+      "tags": [
+        "software engineering",
+        "ux/ui",
+        "javascript",
+        "firebase",
+        "logmeal",
+        "api"
+      ],
       "video": "https://www.youtube.com/embed/KKe5K4mbMAo?si=gMoIRYQKXY4Lh856"
     },
     "blurbs": [
       {
+        "section_header": "Process:",
         "text": [
           "The initial step was to research allergen information from a government directory. [https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies]",
           "Used the researched information to create a database using Firebase DB which helped to structure the next steps.",
           "LogMeal [https://logmeal.com/api/] provided a well documented AI food recognition API and was tested using PostMan [https://www.postman.com/] and the Firebase database before coding.",
           "Javascript, React, & Radix-UI came together to create a functioning, LIVE [http://pink-hat-hacker.github.io/allergen-ai/], website! "
-      ]
+        ]
       }
     ]
   },
@@ -184,7 +237,14 @@
       "date": "2024-9-24",
       "thumbnail": "/images/dc-metro-satire/metro.png",
       "link": "https://github.com/pink-hat-hacker/dc-metro-satire",
-      "tags": ["software engineering", "ux/ui", "javascript", "react", "vercel", "dc metro api"]
+      "tags": [
+        "software engineering",
+        "ux/ui",
+        "javascript",
+        "react",
+        "vercel",
+        "dc metro api"
+      ]
     },
     "blurbs": []
   },
@@ -196,7 +256,15 @@
       "date": "2024-2-17",
       "thumbnail": "/images/letter-boxed/letterboxed.png",
       "link": "https://github.com/Pink-Hat-Hacker/letter-box-solver",
-      "tags": ["software engineering", "ux/ui", "typescript", "react", "vercel", "new york times", "webscraping"]
+      "tags": [
+        "software engineering",
+        "ux/ui",
+        "typescript",
+        "react",
+        "vercel",
+        "new york times",
+        "webscraping"
+      ]
     },
     "blurbs": []
   },
@@ -208,25 +276,36 @@
       "date": "2022-5-14",
       "thumbnail": "/images/tog-game/tog1.png",
       "link": "https://github.com/Pink-Hat-Hacker/mvp-theoryofgreen-backup",
-      "tags": ["software engineering", "game design", "javascript", "phaser", "udel", "team developed"]
+      "tags": [
+        "software engineering",
+        "game design",
+        "javascript",
+        "phaser",
+        "udel",
+        "team developed"
+      ]
     },
     "blurbs": [
       {
+        "section_header": "MVP GOALS",
         "text": [
-          "MVP GOALS",
           "- Gameplay: Movement using ←↕→ & mouse click interaction, Flat plane top down view, Inventory/Toolbar, Material collection & crafting",
-          "- Learning Aspects: Overall environment meter, Limited water supply, Food, Water, Health meters, Environment heals every cycle",
-          "AGILE DEVELOPMENT",
-          "Sprint 1 - > Initial game interface > Design assets, textures, sounds",
-          "Sprint 2 - > Main player movement > Sprite movement > Research Phaser game mechanics",
-          "Sprint 3 - > Material Interaction > Crafting > Inventory",
-          "Sprint 4 - > Animations > Collecting materials > Scalability > Playtesting"
+          "- Learning Aspects: Overall environment meter, Limited water supply, Food, Water, Health meters, Environment heals every cycle"
         ],
         "images": [
           "/images/tog-game/tog1.png",
           "/images/tog-game/tog2.png",
           "/images/tog-game/tog3.png",
           "/images/tog-game/tog4.png"
+        ]
+      },
+      {
+        "section_header": "AGILE DEVELOPMENT",
+        "text": [
+          "Sprint 1) Initial game interface → Design assets textures, sounds",
+          "Sprint 2) Main player movement → Sprite movement → Research Phaser game mechanics",
+          "Sprint 3) Material Interaction → Crafting → Inventory",
+          "Sprint 4) Animations → Collecting materials → Scalability → Playtesting"
         ]
       }
     ]
@@ -239,12 +318,20 @@
       "date": "2023-12-15",
       "thumbnail": "/images/microbots/microbots1.gif",
       "video": "https://www.youtube.com/embed/DC2jE9d2PXo?si=6r71D_-fCIdo9YHJ",
-      "tags": ["software engineering", "ux/ui", "python", "tkinter", "opencv", "udel", "team developed"]
+      "tags": [
+        "software engineering",
+        "ux/ui",
+        "python",
+        "tkinter",
+        "opencv",
+        "udel",
+        "team developed"
+      ]
     },
     "blurbs": [
       {
+        "section_header": "STAKEHOLDERS:",
         "text": [
-          "STAKEHOLDERS:",
           "Dr. Sambeeta Das - Assistant Professor of Mechanical Engineering",
           "Max Sokolich - PhD Candidate - Mechanical Engineering ",
           "[https://dasmicrobotlab.com/]"
@@ -252,8 +339,8 @@
         "images": []
       },
       {
+        "section_header": "FIELD OF STUDY:",
         "text": [
-          "FIELD OF STUDY:",
           "- Biomechanical Engineering",
           "- Robotics & Controls",
           "- Nanotechnology",
@@ -264,10 +351,15 @@
         ]
       },
       {
+        "section_header": "OBJECTIVE",
         "text": [
-          "OBJECTIVE:",
-          "- Efficiently track microbots in 2 dimensions & implement z-axis tracking.",
-          "CODING PROCESS: GUI",
+          "Efficiently track microbots in 2 dimensions & implement z-axis tracking."
+        ],
+        "images": []
+      },
+      {
+        "section_header": "CODING PROCESS: GUI",
+        "text": [
           "- Library, The GUI is made using Tkinter, a python library, that has tools to make an interface",
           "- Functionality, Upload a prerecorded video, Instantaneously start the live video feed, Record and download a video, Alters the live camera parameters, Alters the control parameters of the feed",
           "- Goal: Providing the client with control of different parameters and adding an option to change the contrast of the video to aid the tracker in “finding” the blurred microbot as they move on the z-axis."
@@ -275,14 +367,16 @@
         "images": []
       },
       {
+        "section_header": "CODING PROCESS: OpenCV PREPROCESSING:",
         "text": [
-          "CODING PROCESS: OpenCV PREPROCESSING:",
           "To quantify distance in the z-axis, we chose to measure the “blur” of a microbot to represent its distance from the microscope lens.",
           "We improved the existing contour-tracking preprocessing pipeline by adjusting it based on blur. This “dynamic” pipeline allowed us to accomplish two goals:",
           " 1) Measure the blur of a cropped microbot image to quantify distance",
           " 2) Modify the contour preprocessing based on a microbot’s blurriness to improve out-of-focus tracking"
         ],
-        "images": ["/images/microbots/microbots2.png"]
+        "images": [
+          "/images/microbots/microbots2.png"
+        ]
       }
     ]
   },
@@ -294,25 +388,43 @@
       "date": "2024-3-2",
       "thumbnail": "/images/ud-crime-ai/ud-crime-ai1.jpg",
       "link": "https://github.com/Pink-Hat-Hacker/henhacks-ud-crime-ai",
-      "tags": ["software engineering", "machine learning", "python", "sklearn", "jupyter notebook", "udel"]
+      "tags": [
+        "software engineering",
+        "machine learning",
+        "python",
+        "sklearn",
+        "jupyter notebook",
+        "udel"
+      ]
     },
     "blurbs": [
       {
+        "section_header": "Web Scraping Data:",
         "text": [
-          "HOW",
-          "- Web Scraping Data: First, the data needed to be gathered by the UD Police Statistics website. It was not easily available to download and was separated by day. A simple Python script got all the data into a CSV file.",
-          "- Cleaning Data: Although the data seemed usable it required some standardizing for an ML model.",
-          "   1 - > The entries contained human error and typos so there was a lot of duplicate data with incorrect spelling or formatting. For example: Trabant Student Center & Trabant Building",
-          "   2 - > The dates needed to be separated into DAY, MONTH, YEAR",
-          "   3 - > The times needed to be standardized to military time and : removed",
-          "- Training the Model: Although the data seemed usable it required some standardizing for an ML model.",
-          "   1 - > Using sklearn the model was trained on a DecisionTreeClassifier()",
-          "   2 - > The data was split into training and testing groups. The test size was 20% of the data.",
-          "   3 - > All the data was encoded so that they were numerical values because ML models are essentially mathematical models.",
-          "   4 - > The range of accuracy (since March 2024) is 20% - 30%"
+          " First, the data needed to be gathered by the UD Police Statistics website.",
+          "It was not easily available to download and was separated by day. A simple Python script got all the data into a CSV file."
         ],
-        "images": [
-        ]
+        "images": []
+      },
+      {
+        "section_header": "Cleaning Data:",
+        "text": [
+          "Although the data seemed usable it required some standardizing for an ML model.",
+          "1) The entries contained human error and typos so there was a lot of duplicate data with incorrect spelling or formatting. For example: Trabant Student Center & Trabant Building",
+          "2) The dates needed to be separated into DAY, MONTH, YEAR",
+          "3) The times needed to be standardized to military time and : removed"
+        ],
+        "images": []
+      },
+      {
+        "section_header": "Training the Model:",
+        "text": [
+          "   1) Using sklearn the model was trained on a DecisionTreeClassifier()",
+          "   2) The data was split into training and testing groups. The test size was 20% of the data.",
+          "   3) All the data was encoded so that they were numerical values because ML models are essentially mathematical models.",
+          "   4) The range of accuracy (since March 2024) is 20% - 30%"
+        ],
+        "images": []
       }
     ]
   }

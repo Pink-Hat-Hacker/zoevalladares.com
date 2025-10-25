@@ -57,6 +57,11 @@ export default function ProjectDetail({ project }: Props) {
       {/* Blurbs */}
       {project.blurbs.map((blurb, idx) => (
         <section key={idx} className="mb-8 border-b border-gray-400">
+          {/* Heading */}
+          {blurb.section_header &&
+            blurb.section_header.length > 0 &&
+            <h3 className="text-xl font-bold mb-4">{blurb.section_header}</h3>
+          }
           {/* Text */}
           {blurb.text &&
             blurb.text.length > 0 &&
@@ -71,7 +76,7 @@ export default function ProjectDetail({ project }: Props) {
                   key={i}
                   src={src}
                   alt={`${project.title} image ${i + 1}`}
-                  className="w-full h-full rounded-lg object-cover"
+                  className="w-full h-75 rounded-lg object-cover hover:shadow-2xl transition"
                   onClick={() => setFullscreenSrc(src)}
                 />
               ))}
