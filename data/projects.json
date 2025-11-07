@@ -384,7 +384,7 @@
     "title": "UD Crime AI - HenHacks 2024",
     "details": {
       "featured": false,
-      "description": "Generative Machine Learning model trained on UD Police Daily Statistics from 2017-2021. When provided a LOCATION, DATE, & TIME it generates a prediction of what crime description may be committed.",
+      "description": "48 hour project. Generative Machine Learning model trained on UD Police Daily Statistics from 2017-2021. When provided a LOCATION, DATE, & TIME it generates a prediction of what crime description may be committed.",
       "date": "2024-3-2",
       "thumbnail": "/images/ud-crime-ai/ud-crime-ai1.jpg",
       "link": "https://github.com/Pink-Hat-Hacker/henhacks-ud-crime-ai",
