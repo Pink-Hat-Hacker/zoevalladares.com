@@ -2,10 +2,9 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
-  faSpotify,
-  faLinkedin,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+  faLinkedin
+}
+from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import aboutme from "@/data/aboutme.json"
@@ -13,14 +12,12 @@ import aboutme from "@/data/aboutme.json"
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const socialLinks = [
-    { href: "https://github.com/yourprofile", icon: faGithub },
-    { href: "https://linkedin.com/in/yourprofile", icon: faLinkedin },
-    { href: "https://spotify.com/yourprofile", icon: faSpotify },
-    { href: "https://instagram.com/yourprofile", icon: faInstagram },
+    { href: aboutme.github, icon: faGithub },
+    { href: aboutme.linkedin, icon: faLinkedin },
   ];
 
   const navLinks = [
-    { href: "/portfolio", label: "/projects" },
+    { href: "/projects", label: "/projects" },
     { href: "https://myphotos.com/", label: "/photolio" },
   ];
 //top-0 z-50 bg-white/80 backdrop-blur-md
@@ -40,20 +37,6 @@ export default function Header() {
           >
             <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} style={{ color: "#f514b6" }} />
           </button>
-
-          <div className="hidden md:flex gap-8 text-3xl">
-            {socialLinks.map(({ href, icon }, i) => (
-              <a
-                key={i}
-                href={href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-70 transition-opacity"
-              >
-                <FontAwesomeIcon icon={icon} style={{ color: "#f514b6" }} />
-              </a>
-            ))}
-          </div>
         </div>
 
         {/* RIGHT SIDE */}

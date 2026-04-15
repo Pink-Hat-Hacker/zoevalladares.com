@@ -15,7 +15,7 @@ export type Project = {
   };
   blurbs: {
     section_header: string;
-    text: string[];
+    text: string;
     images: string[];
   }[];
 };

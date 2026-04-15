@@ -3,6 +3,7 @@ import FullScreenImage from "./FullScreenImage";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 type Props = {
   project: Project;
@@ -56,18 +57,23 @@ export default function ProjectDetail({ project }: Props) {
 
       {/* Blurbs */}
       {project.blurbs.map((blurb, idx) => (
-        <section key={idx} className="mb-8 border-b border-gray-400">
+        <section key={idx} className="mb-8 border-b border-gray-400 project-details">
           {/* Heading */}
           {blurb.section_header &&
             blurb.section_header.length > 0 &&
             <h3 className="text-xl font-bold mb-4">{blurb.section_header}</h3>
           }
           {/* Text */}
-          {blurb.text &&
+          {/* {blurb.text &&
             blurb.text.length > 0 &&
             blurb.text.map((t) => (
               <p className="mb-4 text-lg leading-relaxed">{t}</p>
-            ))}
+            ))} */}
+          {blurb.text && (
+            <div className="prose max-w-none mb-4">
+              <ReactMarkdown>{blurb.text}</ReactMarkdown>
+            </div>
+          )}
           {/* Images */}
           {blurb.images && blurb.images.length > 0 && (
             <div className="mb-4 grid md:grid-cols-2 gap-2">

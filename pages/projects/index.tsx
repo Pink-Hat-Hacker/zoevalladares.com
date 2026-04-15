@@ -12,7 +12,7 @@ export default function PortfolioPage() {
       <h1 className="text-3xl mb-6">Projects</h1>
       <div className="grid md:grid-cols-3 gap-6">
         {sortedProjects.map(([slug, project]) => (
-          <Link key={slug} href={`/portfolio/${slug}`} className="grid gap-6">
+          <Link key={slug} href={`/projects/${slug}`} className="grid gap-6">
             <ProjectCard title={project.title} description={project.details.description} image={project.details.thumbnail} />
           </Link>
         ))}

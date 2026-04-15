@@ -8,10 +8,10 @@ import ProjectCard from "@/components/ProjectCard";
 
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
-  const [showCoursework, setShowCoursework] = useState(true);
+  const [showCoursework, setShowCoursework] = useState(false);
 
   return (
-    <div className="p-8 max-w-6xl mx-auto">
+    <div className="p-6 max-w-7xl mx-auto">
       {/* About Me Section */}
       <div className="mb-8">
         <div
@@ -27,19 +27,17 @@ export default function Home() {
         </div>
 
         {showAbout && (
-          <div className="text-xl mt-4 transition-all duration-300 max-w-5xl mx-auto">
+          <div className="text-xl mt-4 transition-all duration-300 max-w-6xl mx-auto">
             <p>hi, i'm {aboutme.first_name}!</p>
             <p>
-              - student @ {aboutme.education.masters.university_name} studying{" "}
-              {aboutme.education.masters.program_name} - class of{" "}
+              - {aboutme.education.masters.program_name} @ {aboutme.education.masters.university_name} - class of {" "}
               {aboutme.education.masters.graduation_year}
             </p>
             <p>
-              - {aboutme.education.undergraduate.program_name} from{" "}
+              - {aboutme.education.undergraduate.program_name} @ {" "}
               {aboutme.education.undergraduate.university_name} - class of{" "}
               {aboutme.education.undergraduate.graduation_year}
             </p>
-            <p>a Blue Devil-Hen</p>
           </div>
         )}
       </div>
@@ -52,7 +50,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6">
           {Object.entries(projects).map(([slug, project]: any) =>
             project.details.featured ? (
-              <Link key={slug} href={`/portfolio/${slug}`} className="grid gap-6">
+              <Link key={slug} href={`/projects/${slug}`} className="grid gap-6">
                 <ProjectCard
                   title={project.title}
                   description={project.details.description}
@@ -79,7 +77,7 @@ export default function Home() {
         </div>
 
         {showCoursework && (
-          <div className="mt-4 transition-all duration-300 max-w-5xl mx-auto">
+          <div className="mt-4 transition-all duration-300 max-w-6xl mx-auto">
             {aboutme.education.masters.coursework && (
               <div className="flex gap-2 flex-wrap mt-6">
                 <h3 className="text-xl font-bold">

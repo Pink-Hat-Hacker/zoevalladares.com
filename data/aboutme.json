@@ -3,6 +3,8 @@
   "first_name": "Zoë",
   "last_name": "Valladares",
   "alias": "Pink Hat Hacker",
+  "github": "https://github.com/Pink-Hat-Hacker",
+  "linkedin": "https://www.linkedin.com/in/zoe-yoyo-valladares/",
   "cover_photo": "",
   "education": {
     "masters": {
@@ -13,10 +15,12 @@
       "graduation_year": 2027,
       "affiliations": [["Duke Motorsport"], ["Duke NSBE Chapter"]],
       "coursework": [
-        "Design Climate I",
-        "Design Innovation Studio 1",
-        "Design Technology Core 1",
-        "Ethical Design, Innovation & Social Practice"
+        "Design Climate I & II",
+        "Design Innovation Studio 1: Human-centered Design",
+        "Design Technology Core 1: Data Analytics & Machine Learning",
+        "Ethical Design, Innovation & Social Practice",
+        "Design Innovation Studio 2: Solution Generation & Testing",
+        "Design Technology Core 2: ML & AI in the Physical World"
       ]
     },
     "undergraduate": {
@@ -30,7 +34,7 @@
         "Programming [Java]",
         "Systems Programming [C]",
         "Data Structures & Algorithms",
-        "Machine Organization & Assembly Language [AR64]",
+        "Machine Organization & Assembly Language [ARM64]",
         "Software Engineering [Typescript]",
         "Game Development",
         "3D Modeling [Blender]",

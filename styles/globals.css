@@ -18,3 +18,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.project-details a {
+  color: #f514b6;
+}
