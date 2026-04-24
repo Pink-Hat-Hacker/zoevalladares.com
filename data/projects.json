@@ -346,17 +346,50 @@
   },
   "design-climate": {
     "title": "Design Climate I & II",
-    "details": {},
-    "blurbs": {}
+    "details": {
+      "featured": false,
+      "description": "Duke University Design Climate course I & II; incubator for climate ventures.",
+      "date":"2026-4-3",
+      "tags": ["sustainability", "venture capital", "business fundamentals", "prototyping", "customer discovery"]
+    },
+    "blurbs": [
+      {
+        "section_header": "PAGE UNDER CONSTRUCTION",
+        "text": "check back in once this page is completed",
+        "image": []
+      }
+    ]
   },
   "omnibin": {
     "title": "OmniBin",
-    "details": {},
-    "blurbs": {}
+    "details": {
+      "featured": false,
+      "description": "Self-sorting trash bin using computer vision, ML, and Data Collection. DTI 531 course project: AI in the Physical World.",
+      "date": "2026-4-21",
+      "tags": ["sustainability", "machine learning", "physical AI", "raspberry pi", "mechatronics"]
+    },
+    "blurbs": [
+      {
+        "section_header": "PAGE UNDER CONSTRUCTION",
+        "text": "check back in once this page is completed",
+        "image": []
+      }
+    ]
   },
   "keep-me": {
     "title": "Keep Me Initiative",
-    "details": {},
-    "blurbs": {}
+    "details": {
+      "featured": false,
+      "description": "Co-Founder of a material circularity project on Duke University's campus, focused on the collection and processing of waste 3D print material. Independent Study.",
+      "date": "2026-12-31",
+      "tag": ["sustainability", "system design", "student project", "grant writing"]
+    },
+    "blurbs": [
+      {
+        "section_header": "PAGE UNDER CONSTRUCTION",
+        "text": "check back in once this page is completed",
+        "image": []
+      }
+    ]
   }
 }
