@@ -1,13 +1,9 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedin
-}
-from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import aboutme from "@/data/aboutme.json"
+import aboutme from "@/data/aboutme.json";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,32 +13,48 @@ export default function Header() {
   ];
 
   const navLinks = [
-    { href: "/projects", label: "/projects" },
-    { href: "https://myphotos.com/", label: "/photolio" },
+    { href: "/projects", label: "/projects", external: false },
+    { href: aboutme.photolio, label: "/photolio", external: true },
   ];
-//top-0 z-50 bg-white/80 backdrop-blur-md
+  //top-0 z-50 bg-white/80 backdrop-blur-md
   return (
     <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md flex justify-between items-center p-4 border-b border-gray-200">
-        {/* NAME */}
+      {/* NAME */}
       <Link href="/">
-        <h1 className="text-3xl font-bold">{aboutme.full_name.toUpperCase()}</h1>
+        <h1 className="text-3xl font-bold">
+          {aboutme.full_name.toUpperCase()}
+        </h1>
       </Link>
 
-        {/* FULL SCREEN HEADER */}
+      {/* FULL SCREEN HEADER */}
       <div className="flex justify-between items-center p-2 max-w-6xl mx-auto">
         <button
-            onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-3xl focus:outline-none"
-            aria-label="Toggle menu"
-          >
-            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} style={{ color: "#f514b6" }} />
-          </button>
-        </div>
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-3xl focus:outline-none"
+          aria-label="Toggle menu"
+        >
+          <FontAwesomeIcon
+            icon={menuOpen ? faXmark : faBars}
+            style={{ color: "#f514b6" }}
+          />
+        </button>
+      </div>
 
-        {/* RIGHT SIDE */}
-        <div className="flex items-center gap-6 text-3xl">
-          <div className="hidden md:flex gap-6">
-            {navLinks.map(({ href, label }, i) => (
+      {/* RIGHT SIDE */}
+      <div className="flex items-center gap-6 text-3xl">
+        <div className="hidden md:flex gap-6">
+          {navLinks.map(({ href, label, external }, i) =>
+            external ? (
+              <a
+                key={i}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-pink-500 transition-colors"
+              >
+                {label}
+              </a>
+            ) : (
               <Link
                 key={i}
                 href={href}
@@ -50,8 +62,9 @@ export default function Header() {
               >
                 {label}
               </Link>
-            ))}
-          </div>
+            ),
+          )}
+        </div>
       </div>
 
       {/* MOBILE MENU */}
