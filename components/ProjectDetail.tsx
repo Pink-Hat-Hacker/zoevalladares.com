@@ -55,6 +55,13 @@ export default function ProjectDetail({ project }: Props) {
         ></iframe>
       ) : null}
 
+      {/** If PPTX */}
+      {project.details.pptx ? (
+        <iframe loading="lazy" className="mb-8 w-full h-100 rounded-lg"
+          src={project.details.pptx} allow="fullscreen">
+        </iframe>
+      ) : null}
+
       {/* Blurbs */}
       {project.blurbs.map((blurb, idx) => (
         <section key={idx} className="mb-8 border-b border-gray-400 project-details">

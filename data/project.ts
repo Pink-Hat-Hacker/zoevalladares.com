@@ -12,6 +12,7 @@ export type Project = {
     link?: string
     tags: string[];
     video?: string;
+    pptx?: string;
   };
   blurbs: {
     section_header: string;

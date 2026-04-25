@@ -53,7 +53,7 @@
       }
     ]
   },
-  "smart-mold": {
+  "ghost-smart-mold": {
     "title": "GHOST - Digitally Reconfigurable Mold",
     "details": {
       "featured": true,
@@ -309,7 +309,7 @@
       }
     ]
   },
-  "crime-ai": {
+  "udel-crime-ai": {
     "title": "UD Crime AI - HenHacks 2024",
     "details": {
       "featured": false,
@@ -366,6 +366,7 @@
       "featured": false,
       "description": "Self-sorting trash bin using computer vision, ML, and Data Collection. DTI 531 course project: AI in the Physical World.",
       "date": "2026-4-21",
+      "pptx":"https://www.canva.com/design/DAHGd_TpMGs/3I7HYNrXFilZm6eTmIND-Q/view",
       "tags": ["sustainability", "machine learning", "physical AI", "raspberry pi", "mechatronics"]
     },
     "blurbs": [
