@@ -9,7 +9,6 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
   const [showCoursework, setShowCoursework] = useState(false);
-  
   return (
     <div className="p-6 max-w-7xl mx-auto">
       {/* About Me Section */}
@@ -28,7 +27,7 @@ export default function Home() {
 
         {showAbout && (
           <div className="text-xl mt-4 transition-all duration-300 max-w-6xl mx-auto">
-            <p>hi, i'm {aboutme.first_name}!</p>
+            <p>hi, {`i'm`} {aboutme.first_name}!</p>
             <p>
               - {aboutme.education.masters.program_name} @ {aboutme.education.masters.university_name} - class of {" "}
               {aboutme.education.masters.graduation_year}
@@ -48,14 +47,14 @@ export default function Home() {
           Featured Projects
         </h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {Object.entries(projects).map(([slug, project]: any) =>
+          {Object.entries(projects).map(([slug, project]) =>
             project.details.featured ? (
               <Link key={slug} href={`/projects/${slug}`} className="grid gap-6">
                 <ProjectCard
                   id={project.id}
                   title={project.title}
                   description={project.details.description}
-                  image={project.details.thumbnail}
+                  thumbnail={('thumbnail' in project.details) ? project.details.thumbnail : undefined}
                 />
               </Link>
             ) : null

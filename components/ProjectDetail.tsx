@@ -5,15 +5,14 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
 import { getBlobUrl } from "@/data/lib/blob";
+import Image from "next/image";
 
 type Props = {
   project: Project;
 };
 
 export default function ProjectDetail({ project }: Props) {
-  const [fullscreenSrc, setFullscreenSrc] = useState<string | null>(null);
-  console.log(project.id);
-  
+  const [fullscreenSrc, setFullscreenSrc] = useState<string | null>(null);  
   return (
     <article className="max-w-5xl mx-auto">
       {/* Title + Date */}
@@ -87,7 +86,7 @@ export default function ProjectDetail({ project }: Props) {
           {blurb.images && blurb.images.length > 0 && (
             <div className="mb-4 grid md:grid-cols-2 gap-2">
               {blurb.images.map((src, i) => (
-                <img
+                <Image
                   key={i}
                   src={getBlobUrl("/" + project.id + "/" + src)}
                   alt={`${project.title} image ${i + 1}`}

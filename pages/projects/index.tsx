@@ -13,7 +13,7 @@ export default function PortfolioPage() {
       <div className="grid md:grid-cols-3 gap-6">
         {sortedProjects.map(([slug, project]) => (
           <Link key={slug} href={`/projects/${slug}`} className="grid gap-6">
-            <ProjectCard id={project.id} title={project.title} description={project.details.description} image={project.details.thumbnail} />
+            <ProjectCard id={project.id} title={project.title} description={project.details.description} thumbnail={('thumbnail' in project.details) ? project.details.thumbnail : undefined} />
           </Link>
         ))}
       </div>
