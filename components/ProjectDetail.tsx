@@ -93,7 +93,7 @@ export default function ProjectDetail({ project }: Props) {
                   width={800}
                   height={600}
                   className="w-full h-75 rounded-lg object-cover hover:shadow-2xl transition"
-                  onClick={() => setFullscreenSrc(src)}
+                  onClick={() => setFullscreenSrc("/" + project.id + "/" + src)}
                 />
               ))}
             </div>

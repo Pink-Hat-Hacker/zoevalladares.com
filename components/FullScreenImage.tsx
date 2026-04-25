@@ -26,6 +26,8 @@ export default function FullscreenImage({ src, alt, onClose }: FullscreenImagePr
       <Image
         src={getBlobUrl(src)}
         alt={alt}
+        width={800} 
+        height={600} 
         className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-[1.02]"
       />
     </div>
