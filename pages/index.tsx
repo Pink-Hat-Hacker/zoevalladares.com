@@ -9,7 +9,7 @@ import ProjectCard from "@/components/ProjectCard";
 export default function Home() {
   const [showAbout, setShowAbout] = useState(true);
   const [showCoursework, setShowCoursework] = useState(false);
-
+  
   return (
     <div className="p-6 max-w-7xl mx-auto">
       {/* About Me Section */}
@@ -52,6 +52,7 @@ export default function Home() {
             project.details.featured ? (
               <Link key={slug} href={`/projects/${slug}`} className="grid gap-6">
                 <ProjectCard
+                  id={project.id}
                   title={project.title}
                   description={project.details.description}
                   image={project.details.thumbnail}
@@ -114,7 +115,7 @@ export default function Home() {
             )}
             {aboutme.skills && (
               <div className="flex gap-2 flex-wrap mt-6">
-                <h3 className="text-xl font-bold">Skills: </h3>
+                <h3 className="text-xl font-bold">Technical Skills: </h3>
                 {aboutme.skills.map((skill: string, i: number) => (
                   <span
                     key={i}

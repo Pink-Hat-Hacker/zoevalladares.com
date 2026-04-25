@@ -1,4 +1,5 @@
 export type Project = {
+  id: string;
   title: string;
   details: {
     featured: boolean;
@@ -8,7 +9,7 @@ export type Project = {
     };
     description: string;
     date: string;
-    thumbnail: string;
+    thumbnail?: string;
     link?: string
     tags: string[];
     video?: string;
@@ -17,6 +18,6 @@ export type Project = {
   blurbs: {
     section_header: string;
     text: string;
-    images: string[];
+    images?: string[];
   }[];
 };

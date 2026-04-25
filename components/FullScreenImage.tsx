@@ -1,3 +1,4 @@
+import { getBlobUrl } from "@/data/lib/blob";
 import { useEffect } from "react";
 
 type FullscreenImageProps = {
@@ -22,7 +23,7 @@ export default function FullscreenImage({ src, alt, onClose }: FullscreenImagePr
       onClick={onClose} // closes on any click
     >
       <img
-        src={src}
+        src={getBlobUrl(src)}
         alt={alt}
         className="max-w-full max-h-full object-contain transition-transform duration-300 hover:scale-[1.02]"
       />

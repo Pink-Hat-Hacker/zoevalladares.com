@@ -1,11 +1,12 @@
 {
   "trail-garden": {
+    "id": "trail-garden",
     "title": "TRAIL - Modular Garden",
     "details": {
       "featured": true,
       "description": "TRAIL is a modular system –– inspired by the Aztec Chinampas –– for growing plants indoors, based on one simple shape that can be combined, scaled and is designed for ease of watering. The continuous nature of the structure can act as a space separator –– a living sculpture that moderates and dictates room flow, similar to the dry zen gardens of Japan.",
       "date": "2024-10-16",
-      "thumbnail": "/images/trail-img/trail1.png",
+      "thumbnail": "trail1.png",
       "link": "",
       "tags": [
         "product design",
@@ -18,42 +19,43 @@
         "section_header": "RESEARCH SCOPE & PROBLEM",
         "text": "- U.S. needs 4.3M more apartments by 2035 to address housing demand.\n- Hydrogels reduce water waste & promote plant growth.\n- 55% garden for aesthetics, 43% for food in the U.S.",
         "images": [
-          "/images/trail-img/trail1.png"
+          "trail1.png"
         ]
       },
       {
         "section_header": "SKETCHES",
         "text": "preliminary sketches on form and modularity ideas.",
         "images": [
-          "/images/trail-img/trail4.png",
-          "/images/trail-img/trail5.png",
-          "/images/trail-img/trail6.png",
-          "/images/trail-img/trail7.png"
+          "trail4.png",
+          "trail5.png",
+          "trail6.png",
+          "trail7.png"
         ]
       },
       {
         "section_header": "SKEMATICS",
         "text": "After selecting a form, using Autodesk Fusion360, I developed CAD for TRAIL.",
         "images": [
-          "/images/trail-img/trail2.png",
-          "/images/trail-img/trail3.png",
-          "/images/trail-img/trail9.png",
-          "/images/trail-img/trail10.png"
+          "trail2.png",
+          "trail3.png",
+          "trail9.png",
+          "trail10.png"
         ]
       },
       {
         "section_header": "STAGING",
         "text": "Using Blender, I staged the forms as if they were used in a home. Scroll to the top to see the full animation on YouTube.",
         "images": [
-          "/images/trail-img/trail1.png",
-          "/images/trail-img/trail14.png",
-          "/images/trail-img/trail12.png",
-          "/images/trail-img/trail13.png"
+          "trail1.png",
+          "trail14.png",
+          "trail12.png",
+          "trail13.png"
         ]
       }
     ]
   },
   "ghost-smart-mold": {
+    "id": "ghost-smart-mold",
     "title": "GHOST - Digitally Reconfigurable Mold",
     "details": {
       "featured": true,
@@ -63,7 +65,7 @@
       },
       "description": "GHOST is a proof of concept, aiming to digitally control “smart fluidˮ to create instant reconfigurable molds from 3D mesh files for hobbyist manufacturing, capable of evolving into an industrial manufacturing process.",
       "date": "2024-11-26",
-      "thumbnail": "/images/ghost-drm/ghost1.png",
+      "thumbnail": "ghost1.png",
       "link": "https://github.com/Pink-Hat-Hacker/ghost-ui",
       "tags": [
         "engineering",
@@ -75,43 +77,44 @@
         "section_header": "PROBLEM",
         "text": "The current standard for reconfigurable molds is the Pin Mold, where each pin requires an actuator, limiting it’s resolution. Liquid removes the resolution limitation, and electrorheological fluid (“smart fluid”) can be precisely controlled using voltage from electrodes.",
         "images": [
-          "/images/ghost-drm/ghost1.png"
+          "ghost1.png"
         ]
       },
       {
         "section_header": "IDEATION",
         "text": "After researching potential materials, sketching the basin and the initial idea of how GHOST would work helped pave next steps.",
         "images": [
-          "/images/ghost-drm/ghost2.png",
-          "/images/ghost-drm/ghost3.png",
-          "/images/ghost-drm/ghost4.png"
+          "ghost2.png",
+          "ghost3.png",
+          "ghost4.png"
         ]
       },
       {
         "section_header": "PHASE 1 - Research, Testing, Iterating",
         "text": "- **SCIENCE** - Electrorheological Fluids (ER) made up of cornstarch and vegetable oil, are extremely fine non-conductive but electrically active particles. When introduced to an electric field, ER’s viscosity changes in response. The GHOST basin has a 2D matrix of electrodes (pennies).\n- **ELECTRONIC SCHEMATICS** - In collaboration with Electrical Engineering Professor James Sherman @ AACC, I developed a voltage multiplier. ER requires high voltages which most DC power supplies do not provide. I was able to achieve 160 Volts through this multiplier and feed it to two electrodes.\n- **CHALLENGES & REWORK** - 160 Volts was not sufficient. There was little to no change in the viscosity of the ER fluid. After discussing the limitations, the results of my findings indicated most power supplies do not provide the necessary voltage, except for static electricity.",
         "images": [
-          "/images/ghost-drm/ghost5.jpeg",
-          "/images/ghost-drm/ghost6.png"
+          "ghost5.jpeg",
+          "ghost6.png"
         ]
       },
       {
         "section_header": "PHASE 2 - Rework, Software, Testing",
         "text": "- **STATIC ELECTRICITY** - ER is often demonstrated with a charged balloon, which loses charge, and isn’t feasible for GHOST. Since ER only require high voltage (1-4kV/mm) and little to no current, researching how to use a Van de Graaff generator was the next step in this process.\n- **SLICING SOFTWARE** [Github](https://github.com/Pink-Hat-Hacker/ghost-ui) - In anticipation for a fully functional prototype, and the future use of a microcontroller, I wrote a slicer in Python. It slices an STL along the x and y axis, mimicking the 2D basin, and plots the max z-axis points on a 3D graph. Using a surface plotter, the slicer hints the finished product. \n- **TESTING & FUTURE ITERATIONS** - To learn how a Van De Graaff generator worked, I created a version using household items. Phase 3 will involve an upgraded Van De Graaff generator to apply the current circuit schematic and test the basin 2D matrix.",
         "images": [
-          "/images/ghost-drm/ghost7.png",
-          "/images/ghost-drm/ghost8.jpeg"
+          "ghost7.png",
+          "ghost8.jpeg"
         ]
       }
     ]
   },
   "duo-msd": {
+    "id": "duo-msd",
     "title": "DUO - Modular Stationery Device",
     "details": {
       "featured": false,
       "description": "DUO is a modular stationery system for makers & creatives. The structure is inspired by Japanese wood joinery which enables the connection of different tools depending on a users needs. It is an adaptable, versatile and evolving system.",
       "date": "2024-10-28",
-      "thumbnail": "/images/duo-msd/duo1.png",
+      "thumbnail": "duo1.png",
       "tags": [
         "product design",
         "manufacturing",
@@ -123,20 +126,20 @@
         "section_header": "PROBLEM",
         "text": "Creatives often purchase multiple tools by different brands to achieve their goals. An average consumer may not place much stake in what type of tool they are purchasing. If there was one system that provided quality, affordability and ease of use for various tools this would remove the need for multiple consumable products and increase sustainability.",
         "images": [
-          "/images/duo-msd/duo1.png"
+          "duo1.png"
         ]
       },
       {
         "section_header": "RESEARCH",
         "text": "experimenting with joinery in CAD (Fusion 360) & Sketches + Inspo",
         "images": [
-          "/images/duo-msd/duo2.png",
-          "/images/duo-msd/duo3.png",
-          "/images/duo-msd/duo4.png",
-          "/images/duo-msd/duo5.png",
-          "/images/duo-msd/duo7.png",
-          "/images/duo-msd/duo8.png",
-          "/images/duo-msd/duo9.png"
+          "duo2.png",
+          "duo3.png",
+          "duo4.png",
+          "duo5.png",
+          "duo7.png",
+          "duo8.png",
+          "duo9.png"
         ]
       },
       {
@@ -148,26 +151,27 @@
         "section_header": "CHALLENGES",
         "text": "Size and innovative mechanisms to ensure a reduced learning curve for users while maintaining a streamline profile. Manufacturing processes that are cost efficient, quality and work with the design. Designing functional mechanisms that can work with a range of materials. Multiple prototypes not fitting properly because of differing manufacturing processes or design.\n\n\n- **Materials** - PLA, RESIN, IRON infused PLA\n- **Manufacturing** - 3D Printing (Makerbot & Formlabs)\n- **Designing** - Fusion 360 & Blender",
         "images": [
-          "/images/duo-msd/duo10.gif"
+          "duo10.gif"
         ]
       },
       {
         "section_header": "MINIMUM VIABLE PRODUCT",
         "text":"- • 3 different tools: 2mm graphite pencil, ballpoint pen, utility device\n- • produced using 3D printed PLA plastic with ferromagnetic properties\n- • 0.05mm offset for smooth joining\n- • triangular body shape to prevent rolling & encourage proper holding position",
         "images": [
-          "/images/duo-msd/duo11.png",
-          "/images/duo-msd/duo12.png"
+          "duo11.png",
+          "duo12.png"
         ]
       }
     ]
   },
   "allergen-ai": {
+    "id": "allergen-ai",
     "title": "allergen.ai",
     "details": {
       "featured": false,
       "description": "allergen.ai aims to simplify allergen identification, using AI image recognition to identify food, ingredients, and cross reference them with an allergen database from a single photo upload. Designed with user convenience in mind, this experimental tool minimizes the reliance on possibly uninformed food providers.",
       "date": "2024-4-21",
-      "thumbnail": "/images/allergen-ai/allergen1.png",
+      "thumbnail": "allergen1.png",
       "link": "https://github.com/Pink-Hat-Hacker/allergen-ai",
       "tags": [
         "software engineering",
@@ -187,12 +191,13 @@
     ]
   },
   "dc-metro-satire": {
+    "id": "dc-metro-satire",
     "title": "🚇 dc metro satire 🚇",
     "details": {
       "featured": false,
       "description": "Funny project that gathers actual DC Metro delay data and if there is no delay on the line it provides a random YouTube video of DC Metro ... inconvenience.",
       "date": "2024-9-24",
-      "thumbnail": "/images/dc-metro-satire/metro.png",
+      "thumbnail": "metro1.png",
       "link": "https://github.com/pink-hat-hacker/dc-metro-satire",
       "tags": [
         "software engineering",
@@ -206,12 +211,13 @@
     "blurbs": []
   },
   "letter-boxed-solver": {
+    "id": "letter-boxed-solver",
     "title": "PHH's Letter Boxed Solver",
     "details": {
       "featured": false,
       "description": "Letter Boxed Solver by Pink-Hat-Hacker (aka Zoë Y. Valladares) is inspired by The NYT Letter Boxed Game. Using Typescript (Front-End and Algorithm), Vercel (deploying serverless function), and NYT's own CSS.",
       "date": "2024-2-17",
-      "thumbnail": "/images/letter-boxed/letterboxed.png",
+      "thumbnail": "letterboxed.png",
       "link": "https://github.com/Pink-Hat-Hacker/letter-box-solver",
       "tags": [
         "software engineering",
@@ -226,12 +232,13 @@
     "blurbs": []
   },
   "tog": {
+    "id": "tog",
     "title": "Theory of Green",
     "details": {
       "featured": false,
       "description": "UDEL CISC374. Imagine popular games like Minecraft, Fortnite and Stardew Valley –– except tasks like getting materials, and surviving is just as important as being environmentally conscious and sustainable. Theory of Green (ToG), an educational video game, teaches children about being eco-friendly while having fun competing.",
       "date": "2022-5-14",
-      "thumbnail": "/images/tog-game/tog1.png",
+      "thumbnail": "tog1.png",
       "link": "https://github.com/Pink-Hat-Hacker/mvp-theoryofgreen-backup",
       "tags": [
         "software engineering",
@@ -247,10 +254,10 @@
         "section_header": "MVP GOALS",
         "text": "- • **Gameplay:** Movement using ←↕→ & mouse click interaction, Flat plane top down view, Inventory/Toolbar, Material collection & crafting\n- • **Learning Aspects:** Overall environment meter, Limited water supply, Food, Water, Health meters, Environment heals every cycle",
         "images": [
-          "/images/tog-game/tog1.png",
-          "/images/tog-game/tog2.png",
-          "/images/tog-game/tog3.png",
-          "/images/tog-game/tog4.png"
+          "tog1.png",
+          "tog2.png",
+          "tog3.png",
+          "tog4.png"
         ]
       },
       {
@@ -260,12 +267,13 @@
     ]
   },
   "microbots": {
+    "id": "microbots",
     "title": "microbots",
     "details": {
       "featured": false,
       "description": "UDEL CS Capstone. Efficiently track microbots in 2 dimensions & implement z-axis tracking.",
       "date": "2023-12-15",
-      "thumbnail": "/images/microbots/microbots1.gif",
+      "thumbnail": "microbots1.gif",
       "video": "https://www.youtube.com/embed/DC2jE9d2PXo?si=6r71D_-fCIdo9YHJ",
       "tags": [
         "software engineering",
@@ -310,12 +318,13 @@
     ]
   },
   "udel-crime-ai": {
+    "id": "udel-crime-ai",
     "title": "UD Crime AI - HenHacks 2024",
     "details": {
       "featured": false,
       "description": "48 hour project. Generative Machine Learning model trained on UD Police Daily Statistics from 2017-2021. When provided a LOCATION, DATE, & TIME it generates a prediction of what crime description may be committed.",
       "date": "2024-3-2",
-      "thumbnail": "/images/ud-crime-ai/ud-crime-ai1.jpg",
+      "thumbnail": "ud-crime-ai1.jpg",
       "link": "https://github.com/Pink-Hat-Hacker/henhacks-ud-crime-ai",
       "tags": [
         "software engineering",
@@ -345,6 +354,7 @@
     ]
   },
   "design-climate": {
+    "id": "design-climate",
     "title": "Design Climate I & II",
     "details": {
       "featured": false,
@@ -361,6 +371,7 @@
     ]
   },
   "omnibin": {
+    "id": "omnibin",
     "title": "OmniBin",
     "details": {
       "featured": false,
@@ -378,12 +389,30 @@
     ]
   },
   "keep-me": {
+    "id": "keep-me",
     "title": "Keep Me Initiative",
     "details": {
       "featured": false,
       "description": "Co-Founder of a material circularity project on Duke University's campus, focused on the collection and processing of waste 3D print material. Independent Study.",
       "date": "2026-12-31",
-      "tag": ["sustainability", "system design", "student project", "grant writing"]
+      "tags": ["sustainability", "system design", "manufacturing", "recycling", "student project", "grant writing"]
+    },
+    "blurbs": [
+      {
+        "section_header": "PAGE UNDER CONSTRUCTION",
+        "text": "check back in once this page is completed",
+        "image": []
+      }
+    ]
+  },
+  "climacrete-systems": {
+    "id": "climacrete-systems",
+    "title": "Climacrete Systems - Duke AI Hackathon 2025",
+    "details": {
+      "featured": false,
+      "description": "Duke AI Hackathon 2025 3rd Place Winner. Climacrete predicts compressive strength, durability, and CO₂ impact — instantly showing the trade-offs between sustainability and structural performance.",
+      "date": "2025-11-7",
+      "tags": ["sustainability", "hackathon", "machine learning", "concrete", "civil engineering"]
     },
     "blurbs": [
       {

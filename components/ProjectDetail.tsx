@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
+import { getBlobUrl } from "@/data/lib/blob";
 
 type Props = {
   project: Project;
@@ -11,7 +12,8 @@ type Props = {
 
 export default function ProjectDetail({ project }: Props) {
   const [fullscreenSrc, setFullscreenSrc] = useState<string | null>(null);
-
+  console.log(project.id);
+  
   return (
     <article className="max-w-5xl mx-auto">
       {/* Title + Date */}
@@ -87,7 +89,7 @@ export default function ProjectDetail({ project }: Props) {
               {blurb.images.map((src, i) => (
                 <img
                   key={i}
-                  src={src}
+                  src={getBlobUrl("/" + project.id + "/" + src)}
                   alt={`${project.title} image ${i + 1}`}
                   className="w-full h-75 rounded-lg object-cover hover:shadow-2xl transition"
                   onClick={() => setFullscreenSrc(src)}
