@@ -4,8 +4,14 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
   images: {
-    domains: ["https://9yud8pyafsrrfnzj.public.blob.vercel-storage.com"],
-  }
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "9yud8pyafsrrfnzj.public.blob.vercel-storage.com",
+        pathname: "/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

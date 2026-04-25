@@ -295,7 +295,7 @@
         "section_header": "FIELD OF STUDY:",
         "text": "**→** Biomechanical Engineering\n- **→** Robotics & Controls\n- **→** Nanotechnology\n- **→** Micro robotic locomotion for applications In Vivo and In Vitro",
         "images": [
-          "/images/microbots/microbots1.gif"
+          "microbots1.gif"
         ]
       },
       {
@@ -312,7 +312,7 @@
         "section_header": "CODING PROCESS: OpenCV PREPROCESSING:",
         "text": "To quantify distance in the z-axis, we chose to measure the “blur” of a microbot to represent its distance from the microscope lens.\n\n *We improved the existing contour-tracking preprocessing pipeline by adjusting it based on blur. This “dynamic” pipeline allowed us to accomplish two goals:*\n- **1)** Measure the blur of a cropped microbot image to quantify distance\n- **2)** Modify the contour preprocessing based on a microbot’s blurriness to improve out-of-focus tracking",
         "images": [
-          "/images/microbots/microbots2.png"
+          "microbots2.png"
         ]
       }
     ]

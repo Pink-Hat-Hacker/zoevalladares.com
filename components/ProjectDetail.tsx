@@ -90,6 +90,8 @@ export default function ProjectDetail({ project }: Props) {
                   key={i}
                   src={getBlobUrl("/" + project.id + "/" + src)}
                   alt={`${project.title} image ${i + 1}`}
+                  width={800}
+                  height={600}
                   className="w-full h-75 rounded-lg object-cover hover:shadow-2xl transition"
                   onClick={() => setFullscreenSrc(src)}
                 />
