@@ -8,49 +8,29 @@
       "date": "2024-10-16",
       "thumbnail": "trail1.png",
       "link": "",
-      "tags": [
-        "product design",
-        "sustainability"
-      ],
+      "tags": ["product design", "sustainability"],
       "video": "https://www.youtube.com/embed/qz3lqa8fNNA?si=IO3NoboJI3A3hQRE"
     },
     "blurbs": [
       {
         "section_header": "RESEARCH SCOPE & PROBLEM",
         "text": "- U.S. needs 4.3M more apartments by 2035 to address housing demand.\n- Hydrogels reduce water waste & promote plant growth.\n- 55% garden for aesthetics, 43% for food in the U.S.",
-        "images": [
-          "trail1.png"
-        ]
+        "images": ["trail1.png"]
       },
       {
         "section_header": "SKETCHES",
         "text": "preliminary sketches on form and modularity ideas.",
-        "images": [
-          "trail4.png",
-          "trail5.png",
-          "trail6.png",
-          "trail7.png"
-        ]
+        "images": ["trail4.png", "trail5.png", "trail6.png", "trail7.png"]
       },
       {
         "section_header": "SCHEMATICS",
         "text": "After selecting a form, using Autodesk Fusion360, I developed CAD for TRAIL.",
-        "images": [
-          "trail2.png",
-          "trail3.png",
-          "trail9.png",
-          "trail10.png"
-        ]
+        "images": ["trail2.png", "trail3.png", "trail9.png", "trail10.png"]
       },
       {
         "section_header": "STAGING",
         "text": "Using Blender, I staged the forms as if they were used in a home. Scroll to the top to see the full animation on YouTube.",
-        "images": [
-          "trail1.png",
-          "trail14.png",
-          "trail12.png",
-          "trail13.png"
-        ]
+        "images": ["trail1.png", "trail14.png", "trail12.png", "trail13.png"]
       }
     ]
   },
@@ -67,43 +47,28 @@
       "date": "2024-11-26",
       "thumbnail": "ghost1.png",
       "link": "https://github.com/Pink-Hat-Hacker/ghost-ui",
-      "tags": [
-        "engineering",
-        "material science"
-      ]
+      "tags": ["engineering", "material science"]
     },
     "blurbs": [
       {
         "section_header": "PROBLEM",
         "text": "The current standard for reconfigurable molds is the Pin Mold, where each pin requires an actuator, limiting it’s resolution. Liquid removes the resolution limitation, and electrorheological fluid (“smart fluid”) can be precisely controlled using voltage from electrodes.",
-        "images": [
-          "ghost1.png"
-        ]
+        "images": ["ghost1.png"]
       },
       {
         "section_header": "IDEATION",
         "text": "After researching potential materials, sketching the basin and the initial idea of how GHOST would work helped pave next steps.",
-        "images": [
-          "ghost2.png",
-          "ghost3.png",
-          "ghost4.png"
-        ]
+        "images": ["ghost2.png", "ghost3.png", "ghost4.png"]
       },
       {
         "section_header": "PHASE 1 - Research, Testing, Iterating",
         "text": "- **SCIENCE** - Electrorheological Fluids (ER) made up of cornstarch and vegetable oil, are extremely fine non-conductive but electrically active particles. When introduced to an electric field, ER’s viscosity changes in response. The GHOST basin has a 2D matrix of electrodes (pennies).\n- **ELECTRONIC SCHEMATICS** - In collaboration with Electrical Engineering Professor James Sherman @ AACC, I developed a voltage multiplier. ER requires high voltages which most DC power supplies do not provide. I was able to achieve 160 Volts through this multiplier and feed it to two electrodes.\n- **CHALLENGES & REWORK** - 160 Volts was not sufficient. There was little to no change in the viscosity of the ER fluid. After discussing the limitations, the results of my findings indicated most power supplies do not provide the necessary voltage, except for static electricity.",
-        "images": [
-          "ghost5.jpeg",
-          "ghost6.png"
-        ]
+        "images": ["ghost5.jpeg", "ghost6.png"]
       },
       {
         "section_header": "PHASE 2 - Rework, Software, Testing",
         "text": "- **STATIC ELECTRICITY** - ER is often demonstrated with a charged balloon, which loses charge, and isn’t feasible for GHOST. Since ER only require high voltage (1-4kV/mm) and little to no current, researching how to use a Van de Graaff generator was the next step in this process.\n- **SLICING SOFTWARE** [Github](https://github.com/Pink-Hat-Hacker/ghost-ui) - In anticipation for a fully functional prototype, and the future use of a microcontroller, I wrote a slicer in Python. It slices an STL along the x and y axis, mimicking the 2D basin, and plots the max z-axis points on a 3D graph. Using a surface plotter, the slicer hints the finished product. \n- **TESTING & FUTURE ITERATIONS** - To learn how a Van De Graaff generator worked, I created a version using household items. Phase 3 will involve an upgraded Van De Graaff generator to apply the current circuit schematic and test the basin 2D matrix.",
-        "images": [
-          "ghost7.png",
-          "ghost8.jpeg"
-        ]
+        "images": ["ghost7.png", "ghost8.jpeg"]
       }
     ]
   },
@@ -115,19 +80,13 @@
       "description": "DUO is a modular stationery system for makers & creatives. The structure is inspired by Japanese wood joinery which enables the connection of different tools depending on a users needs. It is an adaptable, versatile and evolving system.",
       "date": "2024-10-28",
       "thumbnail": "duo1.png",
-      "tags": [
-        "product design",
-        "manufacturing",
-        "engineering"
-      ]
+      "tags": ["product design", "manufacturing", "engineering"]
     },
     "blurbs": [
       {
         "section_header": "PROBLEM",
         "text": "Creatives often purchase multiple tools by different brands to achieve their goals. An average consumer may not place much stake in what type of tool they are purchasing. If there was one system that provided quality, affordability and ease of use for various tools this would remove the need for multiple consumable products and increase sustainability.",
-        "images": [
-          "duo1.png"
-        ]
+        "images": ["duo1.png"]
       },
       {
         "section_header": "RESEARCH",
@@ -150,17 +109,12 @@
       {
         "section_header": "CHALLENGES",
         "text": "Size and innovative mechanisms to ensure a reduced learning curve for users while maintaining a streamline profile. Manufacturing processes that are cost efficient, quality and work with the design. Designing functional mechanisms that can work with a range of materials. Multiple prototypes not fitting properly because of differing manufacturing processes or design.\n\n\n- **Materials** - PLA, RESIN, IRON infused PLA\n- **Manufacturing** - 3D Printing (Makerbot & Formlabs)\n- **Designing** - Fusion 360 & Blender",
-        "images": [
-          "duo10.gif"
-        ]
+        "images": ["duo10.gif"]
       },
       {
         "section_header": "MINIMUM VIABLE PRODUCT",
-        "text":"- • 3 different tools: 2mm graphite pencil, ballpoint pen, utility device\n- • produced using 3D printed PLA plastic with ferromagnetic properties\n- • 0.05mm offset for smooth joining\n- • triangular body shape to prevent rolling & encourage proper holding position",
-        "images": [
-          "duo11.png",
-          "duo12.png"
-        ]
+        "text": "- • 3 different tools: 2mm graphite pencil, ballpoint pen, utility device\n- • produced using 3D printed PLA plastic with ferromagnetic properties\n- • 0.05mm offset for smooth joining\n- • triangular body shape to prevent rolling & encourage proper holding position",
+        "images": ["duo11.png", "duo12.png"]
       }
     ]
   },
@@ -253,12 +207,7 @@
       {
         "section_header": "MVP GOALS",
         "text": "- • **Gameplay:** Movement using ←↕→ & mouse click interaction, Flat plane top down view, Inventory/Toolbar, Material collection & crafting\n- • **Learning Aspects:** Overall environment meter, Limited water supply, Food, Water, Health meters, Environment heals every cycle",
-        "images": [
-          "tog1.png",
-          "tog2.png",
-          "tog3.png",
-          "tog4.png"
-        ]
+        "images": ["tog1.png", "tog2.png", "tog3.png", "tog4.png"]
       },
       {
         "section_header": "AGILE DEVELOPMENT",
@@ -294,9 +243,7 @@
       {
         "section_header": "FIELD OF STUDY:",
         "text": "**→** Biomechanical Engineering\n- **→** Robotics & Controls\n- **→** Nanotechnology\n- **→** Micro robotic locomotion for applications In Vivo and In Vitro",
-        "images": [
-          "microbots1.gif"
-        ]
+        "images": ["microbots1.gif"]
       },
       {
         "section_header": "OBJECTIVE",
@@ -311,9 +258,7 @@
       {
         "section_header": "CODING PROCESS: OpenCV PREPROCESSING:",
         "text": "To quantify distance in the z-axis, we chose to measure the “blur” of a microbot to represent its distance from the microscope lens.\n\n *We improved the existing contour-tracking preprocessing pipeline by adjusting it based on blur. This “dynamic” pipeline allowed us to accomplish two goals:*\n- **1)** Measure the blur of a cropped microbot image to quantify distance\n- **2)** Modify the contour preprocessing based on a microbot’s blurriness to improve out-of-focus tracking",
-        "images": [
-          "microbots2.png"
-        ]
+        "images": ["microbots2.png"]
       }
     ]
   },
@@ -348,7 +293,7 @@
       },
       {
         "section_header": "Training the Model:",
-        "text":"\n- **1)** Using sklearn the model was trained on a DecisionTreeClassifier()\n- **2)** The data was split into training and testing groups. The test size was 20% of the data.\n- **3)** All the data was encoded so that they were numerical values because ML models are essentially mathematical models.\n- **4)** The range of accuracy (since March 2024) is 20% - 30%",
+        "text": "\n- **1)** Using sklearn the model was trained on a DecisionTreeClassifier()\n- **2)** The data was split into training and testing groups. The test size was 20% of the data.\n- **3)** All the data was encoded so that they were numerical values because ML models are essentially mathematical models.\n- **4)** The range of accuracy (since March 2024) is 20% - 30%",
         "images": []
       }
     ]
@@ -359,8 +304,14 @@
     "details": {
       "featured": false,
       "description": "Duke University Design Climate course I & II; incubator for climate ventures.",
-      "date":"2026-4-3",
-      "tags": ["sustainability", "venture capital", "business fundamentals", "prototyping", "customer discovery"]
+      "date": "2026-4-3",
+      "tags": [
+        "sustainability",
+        "venture capital",
+        "business fundamentals",
+        "prototyping",
+        "customer discovery"
+      ]
     },
     "blurbs": [
       {
@@ -377,14 +328,47 @@
       "featured": false,
       "description": "Self-sorting trash bin using computer vision, ML, and Data Collection. DTI 531 course project: AI in the Physical World.",
       "date": "2026-4-21",
-      "pptx":"https://www.canva.com/design/DAHGd_TpMGs/3I7HYNrXFilZm6eTmIND-Q/view?embed",
-      "tags": ["sustainability", "machine learning", "physical AI", "raspberry pi", "mechatronics"]
+      "thumbnail": "omnibin2.png",
+      "link": "https://github.com/Pink-Hat-Hacker/omnibin/tree/main",
+      "pptx": "https://www.canva.com/design/DAHGd_TpMGs/3I7HYNrXFilZm6eTmIND-Q/view?embed",
+      "tags": [
+        "sustainability",
+        "machine learning",
+        "physical AI",
+        "raspberry pi",
+        "mechatronics"
+      ]
     },
     "blurbs": [
       {
-        "section_header": "PAGE UNDER CONSTRUCTION",
-        "text": "check back in once this page is completed",
-        "image": []
+        "section_header": "PROJECT OVERVIEW",
+        "text": "OmniBin is a computer-vision-aided waste classification and sorting machine that removes the guesswork from recycling. Using a Raspberry Pi, camera, stepper motor HAT, and two stepper motors, OmniBin automatically identifies waste placed in view of the camera, rotates a quadrant-divided bin to the correct category, and releases the item into the correct quadrant. _AI edited images included for studio style quality*_",
+        "images": ["omnibin2.png", "omnibin3.png"]
+      },
+      {
+        "section_header": "Phase 1",
+        "text": "Developed a training dataset of 1000+ images across 4 categories: Garbage, Plastic, Paper, and Metal using an [opensource dataset](https://www.kaggle.com/datasets/joebeachcapital/realwaste/data). Trained a custom image classification model using [Teachable Machine](https://teachablemachine.withgoogle.com/). Using a simple web app, a dev computer's webcam was used to test the model's predictions in real time, which were relayed to a MongoDB database. In anticipation of the physical build, stepper motor movement was simulated using a Python script that read the database and printed the predicted category. [This was 531's midterm deliverable.](https://github.com/Pink-Hat-Hacker/omnibin/blob/main/README.md)",
+        "images": ["omnibin6.png"]
+      },
+      {
+        "section_header": "Phase 2",
+        "text": "Prior to the start of building the final physical prototype, customer discovery, end-user personas, and use cases were developed to inform the design and functionality of the final product. After speaking with 8 people on Duke University's campus, I identified key pain points and opportunities for waste management improvement, especially regarding facilities personnel experience. In anticipation of the sensors and parts, a CAD model was created to visualize the final product.",
+        "images": ["omnibin11.png", "omnibin10.png", "omnibin9.png", "omnibin8.png", "omnibin7.png"]
+      },
+      {
+        "section_header": "Phase 3",
+        "text": "The final phase involved building the physical prototype. The Raspberry Pi was programmed to run the model on live camera feed and control the stepper motors based on the predictions. The bin was built using laser-cut MDF/plywood and 3D printed parts, designed to rotate a bucket and sort waste into four quadrants. Testing revealed areas for improvement in both the model's accuracy and the mechanical design. The final product successfully sorted waste with a reasonable degree of accuracy, demonstrating the potential for ML-assisted waste management solutions. [Final Code Link.](https://github.com/Pink-Hat-Hacker/omnibin/tree/final)",
+        "images": ["omnibin1.png", "omnibin2.png", "omnibin4.jpg", "omnibin3.png"]
+      },
+      {
+        "section_header": "Customer Case Study",
+        "text": "A university campus installs OmniBin units in high-traffic areas where recycling contamination is a persistent issue and has been identified by the Office of Sustainability. Student, due to unclear labeling and the need for convenience, frequently mis-sort waste. OmniBin removed the decision entirely, items are automatically identified and sorted while the system logs accuracy, usage data, and each bin becomes smarter based on the trash it observes. Overtime facilities staff notice a reduction in contamination rates which allows them to optimize waste operations. OmniBin will start off as smart waste management for infrastructures like universities and offices, however, as the company grows, trash identification can move downstream and help with industrial level separation systems. OmniBin’s primary buyers are Universities, Corporate Offices, Airports, and Malls. OmniBins solve three problems which makes it compelling to customers and end-users: 1. it removes human error, 2. it reduces operational costs (contaminated recycling is often rejected), 3. it generates and collects data. At the price of $299 customers can save costs in recycling contamination, provide ESG reporting metrics, and compliance documentation. Most importantly, OmniBin does not intend to replace facilities staff, only reducing effort.",
+        "images": []
+      },
+      {
+        "section_header": "Reflections, Challenges & Future Iterations",
+        "text": "**Overall Project Reflection**: This is personally compelling for two reasons, I believe strongly in sustainable design — design that either uses sustainable materials or instills sustainable actions. OmniBin does both. It builds a comprehensive database of waste materials and removes the need for choice from the end user helping waste management downstream.\n\n**Mechanism Reflections:** There are a few design changes I would make to the physical system. The biggest is the trash chute. Instead of a 3D-printed extension off the wooden body, I would build the chute section directly from wood or MDF as part of the main structure. This would allow the second stepper motor to be mounted directly to the body and open a hatch from underneath, eliminating the strain the current chute puts on the motor and improving long-term reliability. Second, I would add lighting at the chute entrance to make sure it's uniform to help with the camera detection.",
+        "images": []
       }
     ]
   },
@@ -395,7 +379,14 @@
       "featured": false,
       "description": "Co-Founder of a material circularity project on Duke University's campus, focused on the collection and processing of waste 3D print material. Independent Study.",
       "date": "2026-12-31",
-      "tags": ["sustainability", "system design", "manufacturing", "recycling", "student project", "grant writing"]
+      "tags": [
+        "sustainability",
+        "system design",
+        "manufacturing",
+        "recycling",
+        "student project",
+        "grant writing"
+      ]
     },
     "blurbs": [
       {
@@ -412,7 +403,13 @@
       "featured": false,
       "description": "Duke AI Hackathon 2025; placed 1st in Social Impact & Climate category, won 3rd place overall. Climacrete predicts compressive strength, durability, and CO₂ impact — instantly showing the trade-offs between sustainability and structural performance.",
       "date": "2025-11-7",
-      "tags": ["sustainability", "hackathon", "machine learning", "concrete", "civil engineering"]
+      "tags": [
+        "sustainability",
+        "hackathon",
+        "machine learning",
+        "concrete",
+        "civil engineering"
+      ]
     },
     "blurbs": [
       {
