@@ -33,7 +33,7 @@
         ]
       },
       {
-        "section_header": "SKEMATICS",
+        "section_header": "SCHEMATICS",
         "text": "After selecting a form, using Autodesk Fusion360, I developed CAD for TRAIL.",
         "images": [
           "trail2.png",
@@ -410,7 +410,7 @@
     "title": "Climacrete Systems - Duke AI Hackathon 2025",
     "details": {
       "featured": false,
-      "description": "Duke AI Hackathon 2025 3rd Place Winner. Climacrete predicts compressive strength, durability, and CO₂ impact — instantly showing the trade-offs between sustainability and structural performance.",
+      "description": "Duke AI Hackathon 2025; placed 1st in Social Impact & Climate category, won 3rd place overall. Climacrete predicts compressive strength, durability, and CO₂ impact — instantly showing the trade-offs between sustainability and structural performance.",
       "date": "2025-11-7",
       "tags": ["sustainability", "hackathon", "machine learning", "concrete", "civil engineering"]
     },

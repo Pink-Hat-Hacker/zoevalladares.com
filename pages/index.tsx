@@ -27,7 +27,7 @@ export default function Home() {
 
         {showAbout && (
           <div className="text-xl mt-4 transition-all duration-300 max-w-6xl mx-auto">
-            <p>hi, {`i'm`} {aboutme.first_name}!</p>
+            <p>Hi, {`i'm`} {aboutme.first_name}!</p>
             <p>
               - {aboutme.education.masters.program_name} @ {aboutme.education.masters.university_name} - class of {" "}
               {aboutme.education.masters.graduation_year}
